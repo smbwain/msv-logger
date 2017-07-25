@@ -1,13 +1,22 @@
 
 export type Profiler = (label : string) => void;
 
-export interface LoggerInterface {
+export type Logger = {
     error(...msg : any[]) : void;
     warn(...msg : any[]) : void;
     log(...msg : any[]) : void;
     debug(...msg : any[]) : void;
-    sub(params? : Params) : LoggerInterface;
+    sub(params? : Params) : Logger;
     profiler(name : string) : Profiler;
+}
+
+export enum Level {
+    none,
+    error,
+    warn,
+    log,
+    debug,
+    profile
 }
 
 export type Params = {
@@ -25,4 +34,4 @@ export type Params = {
     profiler(name : string) : Profiler;
 }*/
 
-export function logger(params: Params) : LoggerInterface;
+export function logger(params: Params) : Logger;
