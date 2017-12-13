@@ -1,3 +1,5 @@
+export * from './types';
+
 import * as colors from 'colors/safe';
 
 import {Profiler, Params, Logger} from "./types";

@@ -1,9 +1,9 @@
 {
   "name": "msv-logger",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Logger for msv",
   "main": "dist/logger.js",
-  "types": "src/types.d.ts",
+  "types": "types.d.ts",
   "dependencies": {
     "colors": "1.1.2"
   },
