@@ -1,18 +1,20 @@
 {
   "name": "msv-logger",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Logger for msv",
-  "main": "dist/logger.js",
-  "types": "types.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "colors": "1.1.2"
   },
   "devDependencies": {
     "@types/node": "8.0.14",
+    "tslint": "^5.9.1",
     "typescript": "2.4.1"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "tslint 'src/**/*.ts'"
   },
   "repository": {
     "type": "git",
