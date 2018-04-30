@@ -48,7 +48,7 @@ export function logger(params: Params): Logger {
     const level: Level = (() => {
         if (typeof params.level === 'string') {
             if (Level[params.level] === undefined) {
-                throw new Error(`The is no log level "${params.level}"`);
+                throw new Error(`There is no log level "${params.level}"`);
             }
             return Level[params.level];
         }
